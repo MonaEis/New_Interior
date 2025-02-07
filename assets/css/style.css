@@ -1,0 +1,589 @@
+@font-face {
+    font-family: "Alegra_500";
+    src: url(../font/Alegreya_SC/AlegreyaSC-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Alegreya_Sans";
+    src: url(../font/Alegreya_Sans/AlegreyaSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Nixie";
+    src: url(../font/Nixie_One/NixieOne-Regular.ttf);
+}
+
+/* ! Basics */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+img {
+    max-width: 100%;
+}
+
+:root {
+    --fs14: 1.4rem;
+    --fs18: 1.8rem;
+    --fs30: 3rem;
+    --fs33: 3.3rem;
+    --fs36: 3.6rem;
+    --c_wh: #ffffff;
+    --c_gr-bl: #3a4f52;
+    --c_gr: #6a6a6a;
+    --c_h-bl: #4da7ca;
+    --c_d-bl: #2b3e51;
+    --c_backgr: #f5f5f5;
+}
+
+p,
+a {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+        Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+p {
+    font-size: var(--fs14);
+    line-height: 20px;
+}
+
+.background {
+    background-color: var(--c_backgr);
+}
+
+.wrapper {
+    padding: 0 9vw;
+}
+
+.button {
+    font-size: var(--fs18);
+    color: var(--c_gr-bl);
+    text-decoration: none;
+    border: var(--c_gr-bl) 1px solid;
+    padding: 13px 17px;
+    transition: all 0.2s 0s linear;
+}
+
+.button:hover {
+    color: var(--c_wh);
+    background-color: var(--c_gr-bl);
+}
+
+.button_w {
+    font-size: var(--fs18);
+    color: var(--c_wh);
+    text-decoration: none;
+    border: var(--c_wh) 1px solid;
+    padding: 13px 17px;
+    transition: all 0.2s 0s linear;
+}
+
+.button_w:hover {
+    color: var(--c_gr-bl);
+    background-color: var(--c_wh);
+}
+
+h3 {
+    font-family: "Alegreya_Sans";
+    font-size: var(--fs36);
+    font-weight: 100;
+    color: var(--c_gr-bl);
+}
+
+h4 {
+    font-family: "Alegreya_Sans";
+    font-size: var(--fs36);
+    font-weight: 100;
+    color: var(--c_wh);
+}
+
+/*  ! Header */
+
+header {
+    height: 810px;
+    background-image: url(../img/header_Bild.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+header nav {
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 30px;
+    margin-bottom: 255px;
+    height: 102px;
+}
+
+header nav a {
+    font-family: "Alegra_500";
+    font-size: var(--fs36);
+    color: var(--c_wh);
+    text-decoration: none;
+    line-height: 3rem;
+}
+
+header nav a:hover {
+    border-bottom: var(--c_wh) solid 2px;
+}
+
+header article {
+    text-align: center;
+}
+
+header article h1 {
+    color: var(--c_wh);
+    font-family: "Nixie";
+    font-size: 5.6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
+header article h2 {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: "Alegra_500";
+    font-size: 2.2rem;
+}
+
+/* ! Main */
+
+/* ! Latest */
+
+.latest {
+    padding: 60px 0;
+}
+
+.text_button {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 60px;
+}
+
+.text_button h3 {
+    margin-bottom: 15px;
+}
+
+.text_button p {
+    color: var(--c_gr);
+}
+
+/* .gallery {
+    background-color: coral;
+
+} */
+
+.gallery .row {
+    /* background-color: burlywood; */
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery .g_oben {
+    margin-bottom: 30px;
+}
+
+.gallery .row div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    /* # Hier nochmal wegen den Größen fragen! */
+    width: 30%;
+    height: 215px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.latest_1 {
+    background-image: url(../img/Link1.png);
+}
+
+.latest_2 {
+    background-image: url(../img/Link2.png);
+}
+
+.latest_3 {
+    background-image: url(../img/Link3.png);
+}
+
+.latest_4 {
+    background-image: url(../img/Link4.png);
+}
+
+.latest_5 {
+    background-image: url(../img/Link5.png);
+}
+
+.latest_6 {
+    background-image: url(../img/Link6.png);
+}
+
+/* ! Services */
+
+.services {
+    background-image: url(../img/Banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 80px;
+}
+
+.trans_bg {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 20px 0;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.banner h4 {
+    margin-bottom: 15px;
+}
+
+.banner p {
+    color: var(--c_wh);
+}
+
+.services .icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services .icons div {
+    text-align: center;
+    margin: 15px;
+    /* background-color: blueviolet; */
+}
+
+.services .icons img {
+    height: 60px;
+    margin-bottom: 5px;
+}
+
+.services .icons p {
+    color: var(--c_wh);
+}
+
+.services .icons p:nth-of-type(1) {
+    font-family: "Alegreya_Sans";
+    font-size: var(--fs30);
+    margin-bottom: 15px;
+}
+
+/* ! Blog */
+
+.blog {
+    padding: 60px 0;
+}
+
+.blog_gallery {
+    /* background-color: coral; */
+
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.blog_gallery img {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 18px;
+}
+
+.blog_gallery .blog_1 img {
+    height: 230px;
+}
+
+.blog_gallery .blog_2 img {
+    height: 270px;
+}
+
+.blog_gallery .blog_3 img {
+    height: 360px;
+}
+
+.blog_gallery h5 {
+    font-family: "Alegreya_Sans";
+    font-size: var(--fs30);
+    font-weight: 100;
+    color: var(--c_gr-bl);
+    margin-bottom: 15px;
+}
+
+.blog_gallery p:nth-of-type(1) {
+    font-style: italic;
+    color: var(--c_gr);
+    font-weight: 300;
+    margin-bottom: 17px;
+}
+
+.blog_gallery p:nth-of-type(2) {
+    color: var(--c_gr);
+    margin-bottom: 17px;
+}
+
+.blog_gallery a {
+    font-size: var(--fs14);
+    color: var(--c_h-bl);
+}
+
+/* ! Quote */
+
+.quote {
+    background-image: url(../img/banner2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 80px;
+}
+
+.quote .trans_bg {
+    padding: 20px 0 40px 0;
+}
+
+.banner2 {
+    text-align: center;
+}
+
+.banner2 h4 {
+    margin-bottom: 60px;
+}
+
+/* ! Testimonials */
+
+.testimonials {
+    padding: 60px 0;
+}
+
+.testimonials .test_hl {
+    text-align: center;
+    margin-bottom: 62px;
+}
+
+.testimonials .test_hl h3 {
+    margin-bottom: 15px;
+}
+
+.testimonials p {
+    color: var(--c_gr);
+}
+
+.testimonials .people {
+    /* background-color: aqua; */
+
+    display: flex;
+    gap: 30px;
+    text-align: center;
+    padding: 25px;
+}
+
+.testimonials .people img {
+    width: 150px;
+    margin-bottom: 15px;
+}
+
+.testimonials .people p:nth-of-type(1) {
+    margin-bottom: 23px;
+}
+
+.testimonials .people p:nth-of-type(2) {
+    font-weight: bold;
+}
+
+/* ! Contact */
+
+.contact {
+    background-image: url(../img/contact.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 80px;
+}
+
+.contact .trans_bg {
+    padding: 20px 0 40px 0;
+}
+
+.contact .formular form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .formular input {
+    width: 555px;
+    height: 34px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #ccc;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.08) inset;
+    border-radius: 4px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+        Helvetica, Arial, "Lucida Grande", sans-serif;
+    padding-left: 10px;
+    font-size: var(--fs14);
+    color: var(--c_wh);
+
+    margin-bottom: 15px;
+}
+
+.contact .formular textarea {
+    width: 555px;
+    height: 54px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #ccc;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.08) inset;
+    border-radius: 4px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+        Helvetica, Arial, "Lucida Grande", sans-serif;
+    padding: 8px 0 0 10px;
+    font-size: var(--fs14);
+    color: var(--c_wh);
+
+    margin-bottom: 15px;
+}
+
+::placeholder {
+    color: var(--c_wh);
+}
+
+.contact .formular button {
+    background-color: rgba(255, 255, 255, 0);
+    font-size: var(--fs18);
+    color: var(--c_wh);
+    text-decoration: none;
+    border: var(--c_wh) 1px solid;
+    padding: 13px 17px;
+    transition: all 0.2s 0s linear;
+}
+
+.contact .formular button:hover {
+    color: var(--c_gr-bl);
+    background-color: var(--c_wh);
+}
+
+/* ! Footer */
+
+footer {
+    background-color: var(--c_d-bl);
+    padding: 0 9vw;
+    height: 140px;
+    display: flex;
+    align-items: center;
+}
+
+footer p {
+    color: var(--c_wh);
+}
+
+/* * Media Queries */
+
+/* * Tablet */
+
+@media screen and (max-width: 768px) {
+    /* ! Basics */
+
+    .wrapper {
+        padding: 0 3vw;
+    }
+
+    /*  ! Header */
+
+    header {
+        height: 447px;
+    }
+
+    header nav {
+        margin-bottom: 72px;
+    }
+
+    /* ! Main */
+
+    /* ! Latest */
+
+    .latest {
+        padding: 22px 0 126px 0;
+    }
+
+    .gallery .row div {
+        max-width: 35%;
+        height: 139px;
+    }
+
+    /* ! Services */
+
+    .services {
+        background-image: url(../img/Banner.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        padding: 80px;
+    }
+
+    .trans_bg {
+        background: rgba(0, 0, 0, 0.2);
+        padding: 20px 0;
+    }
+
+    .banner {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+
+    .banner h4 {
+        margin-bottom: 15px;
+    }
+
+    .banner p {
+        color: var(--c_wh);
+    }
+
+    .services .icons {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .services .icons div {
+        text-align: center;
+        margin: 15px;
+        /* background-color: blueviolet; */
+    }
+
+    .services .icons img {
+        height: 60px;
+        margin-bottom: 5px;
+    }
+
+    .services .icons p {
+        color: var(--c_wh);
+    }
+
+    .services .icons p:nth-of-type(1) {
+        font-family: "Alegreya_Sans";
+        font-size: var(--fs30);
+        margin-bottom: 15px;
+    }
+}
