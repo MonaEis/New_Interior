@@ -206,7 +206,7 @@ header article h2 {
     gap: 20px;
 }
 
-.latest_1 {
+/* .latest_1 {
     background-image: url("../img/Link1.png");
 }
 
@@ -228,7 +228,72 @@ header article h2 {
 
 .latest_6 {
     background-image: url("../img/Link6.png");
+} */
+
+
+.effect .effect_hover {
+    width: 20rem;
+    height: 20rem;
+    overflow: hidden;
+    position: relative;
 }
+
+.effect .effect_hover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 1s;
+}
+
+.effect:hover img{
+    transform: scale(1.2);
+}
+
+.effect .effect_hover .test {
+    background-color: #02383A;
+    opacity: 0;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 2s;
+}
+
+.effect .effect_hover a {
+    position: absolute;
+    display: none;
+}
+
+.effect .effect_hover .test:hover {
+    opacity: 0.7;
+}
+
+.effect .effect_hover:hover a{
+    opacity: 1;
+    display: block;
+    
+}
+
+
+
+/* .effect {
+    width: 20rem;
+    height: 20rem;
+    overflow: hidden;
+}
+
+.effect img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 400ms;
+}
+
+.effect:hover div{
+    transform: scale(1.2);
+} */
+
 
 /* ! Services */
 
