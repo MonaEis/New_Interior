@@ -486,6 +486,7 @@ header article h2 {
 }
 
 .contact .formular input {
+    width: 50vw;
     height: 34px;
     background-color: rgba(255, 255, 255, 0);
     border: 1px solid #ccc;
@@ -498,10 +499,10 @@ header article h2 {
     color: var(--c_wh);
 
     margin-bottom: 15px;
-    padding-right: 40%;
 }
 
 .contact .formular textarea {
+    width: 50vw;
     height: 54px;
     background-color: rgba(255, 255, 255, 0);
     border: 1px solid #ccc;
@@ -512,8 +513,6 @@ header article h2 {
     padding: 8px 0 0 10px;
     font-size: var(--fs14);
     color: var(--c_wh);
-
-    padding-right: 40%;
 
     margin-bottom: 15px;
 }
@@ -698,6 +697,14 @@ footer p {
         padding: 60px 0;
     }
 
+    .contact .formular input {
+        width: 70vw;
+    }
+    
+    .contact .formular textarea {
+        width: 70vw;
+    }
+
 
     /* ! Footer */
 
@@ -816,10 +823,12 @@ footer p {
         padding: 60px 0;
     }
 
-    /* ! Footer */
-
-    footer p {
-        max-width: 150px;
+    .contact .formular input {
+        width: 85vw;
+    }
+    
+    .contact .formular textarea {
+        width: 85vw;
     }
 }
 
