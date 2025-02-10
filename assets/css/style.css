@@ -112,6 +112,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    position:relative;
 }
 
 header nav {
@@ -245,7 +246,13 @@ header article h2 {
     transition: transform 1s;
 }
 
-.effect:hover img{
+
+.latest_1:hover img,
+.latest_2:hover img,
+.latest_3:hover img,
+.latest_4:hover img,
+.latest_5:hover img,
+.latest_6:hover img {
     transform: scale(1.2);
 }
 
@@ -265,9 +272,11 @@ header article h2 {
     display: none;
 }
 
-.effect .effect_hover .test:hover {
+
+.effect .effect_hover:hover .test {
     opacity: 0.7;
 }
+
 
 .effect .effect_hover:hover a{
     opacity: 1;
@@ -275,24 +284,6 @@ header article h2 {
     
 }
 
-
-
-/* .effect {
-    width: 20rem;
-    height: 20rem;
-    overflow: hidden;
-}
-
-.effect img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 400ms;
-}
-
-.effect:hover div{
-    transform: scale(1.2);
-} */
 
 
 /* ! Services */
@@ -592,19 +583,15 @@ footer p {
     }
 
     .gallery .row div {
-        max-width: 35%;
         height: 139px;
     }
 
+
+   
     /* ! Services */
 
-    .services {
-        background-image: url("../img/Banner.png");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        background-attachment: fixed;
-        padding: 80px;
+    main .services {
+        padding: 80px 3vw;
     }
 
     .trans_bg {
@@ -686,7 +673,7 @@ footer p {
     /* ! Quote */
 
     .quote {
-        padding: 80px 9px;
+        padding: 80px 3vw;
     }
 
     .quote .trans_bg {
@@ -766,6 +753,16 @@ footer p {
         min-width: 100%;
         height: 206px;        
     }
+
+    
+    .effect .effect_hover .test {
+        opacity: .7;
+    }
+    
+    .effect .effect_hover a {
+        display: block;
+    }
+    
 
     /* ! Services */
 
